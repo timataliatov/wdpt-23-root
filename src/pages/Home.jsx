@@ -20,7 +20,7 @@ function Home() {
     {
       title: 'Web Development',
       description:
-        'Crafting responsive and intuitive user interfaces using modern web technologies.',
+        'Crafting responsive and intuitive user interfaces involves leveraging modern web technologies to create engaging and user-friendly experiences.',
     },
     {
       title: 'Backend Solutions',
@@ -61,7 +61,9 @@ function Home() {
             <h3 className="text-lg font-bold mb-2 text-center">
               {skill.title}
             </h3>
-            <p className="text-sm mb-4 flex-grow">{skill.description}</p>
+            <p className="text-sm m-4 flex-grow text-center">
+              {skill.description}
+            </p>
             <button className="retro-button text-sm hover-effect w-full mt-auto">
               Learn More
             </button>

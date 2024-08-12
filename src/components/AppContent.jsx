@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import Header from './Header';
+import Header from './navbar/Header';
 import MainContent from './MainContent';
-import Footer from './Footer';
+import Footer from './footer/Footer';
 import MatrixRain from './MatrixRain';
-import Terminal from './Terminal';
+import Terminal from './footer/Terminal';
 import PropTypes from 'prop-types';
 
 function AppContent() {

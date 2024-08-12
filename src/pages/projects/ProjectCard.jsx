@@ -21,7 +21,7 @@ const ProjectCard = ({ week, description, onClick, isActive }) => (
     <p className="mb-2 h-16 overflow-hidden text-center w-full text-sm">
       {description}
     </p>
-    <button className="retro-button w-full text-xs py-1 hover:bg-[color:var(--color-text)] hover:text-[color:var(--color-bg)]">
+    <button className="retro-button w-48 text-xs py-1 hover-effect">
       Open Project
     </button>
   </div>

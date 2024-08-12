@@ -3,8 +3,8 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import Projects from '../pages/projects/Projects';
 import Home from '../pages/Home';
 import Contact from '../pages/Contact';
-import LeftSidebar from './LeftSidebar';
-import RightSidebar from './RightSidebar';
+import LeftSidebar from './sidebars/LeftSidebar';
+import RightSidebar from './sidebars/RightSidebar';
 import PropTypes from 'prop-types';
 
 function MainContent({
