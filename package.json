@@ -3,7 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://timataliatov.github.io/wdpt-23-root",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "preview": "vite preview",
     "build": "vite build",
@@ -26,6 +29,7 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
+    "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
     "postcss": "^8.4.41",
     "prettier": "^3.3.3",
@@ -33,9 +37,8 @@
     "terser": "^5.31.5",
     "vite": "^5.4.0"
   },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "main": "eslint.config.js",
   "keywords": [],
-  "author": "",
+  "author": "timataliatov <ttaliatov@gmail.com>",
   "license": "ISC"
 }

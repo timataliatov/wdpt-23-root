@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Projects from '../pages/Projects';
+import Projects from '../pages/projects/Projects';
 import Home from '../pages/Home';
-import Contact from '../pages/Contact';
+import Contact from '../pages/contact/Contact';
 import LeftSidebar from './LeftSidebar';
 import RightSidebar from './RightSidebar';
 import PropTypes from 'prop-types';
