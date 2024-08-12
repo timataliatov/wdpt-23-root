@@ -3,15 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://timataliatov.github.io/wdpt-23-root",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "preview": "vite preview",
     "build": "vite build",
     "lint": "eslint .",
-    "format": "prettier --write \"src/**/*.{js,jsx}\""
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
@@ -40,5 +39,6 @@
   "main": "eslint.config.js",
   "keywords": [],
   "author": "timataliatov <ttaliatov@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage": "https://timataliatov.github.io/wdpt-23-root"
 }
