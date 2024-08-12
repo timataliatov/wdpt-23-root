@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: '/wdpt-23-root/',
   server: {
-    port: 3000,
+    port: 10000,
   },
   build: {
     outDir: 'dist',
