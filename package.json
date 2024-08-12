@@ -11,7 +11,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "start": "vite preview --port $PORT"
+    "start": "vite preview --host 0.0.0.0 --port $PORT"
   },
   "dependencies": {
     "lucide-react": "^0.427.0",

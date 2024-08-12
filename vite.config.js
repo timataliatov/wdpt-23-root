@@ -7,6 +7,9 @@ export default defineConfig({
   server: {
     port: 10000,
   },
+  preview: {
+    port: process.env.PORT || 3000,
+    host: '0.0.0.0',
   build: {
     outDir: 'dist',
     minify: 'terser',
