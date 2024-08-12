@@ -1,0 +1,26 @@
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 16px;
+  transition: all var(--transition-speed) ease;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border: 1px solid var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-alt);
+}

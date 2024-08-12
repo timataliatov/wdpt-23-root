@@ -37,15 +37,10 @@ function AppContent() {
         isProjectsPage={isProjectsPage}
         leftSidebarOpen={leftSidebarOpen}
         rightSidebarOpen={rightSidebarOpen}
-      />
-      <Footer
-        terminalOpen={terminalOpen}
-        setTerminalOpen={setTerminalOpen}
-        leftSidebarOpen={leftSidebarOpen}
         setLeftSidebarOpen={setLeftSidebarOpen}
-        rightSidebarOpen={rightSidebarOpen}
         setRightSidebarOpen={setRightSidebarOpen}
       />
+      <Footer terminalOpen={terminalOpen} setTerminalOpen={setTerminalOpen} />
       {terminalOpen && (
         <div className="terminal-overlay">
           <Terminal onClose={() => setTerminalOpen(false)} />

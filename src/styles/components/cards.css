@@ -1,0 +1,9 @@
+.retro-container {
+  @apply border border-solid border-[color:var(--color-border)] p-3 shadow-[1px_1px_0px_var(--color-accent)] transition-all duration-300;
+  display: flex;
+  flex-direction: column;
+}
+
+.retro-card {
+  @apply retro-container p-4;
+}

@@ -5,9 +5,11 @@ import PropTypes from 'prop-types';
 function LeftSidebar({ isOpen }) {
   return (
     <aside
-      className={`retro-container transition-all duration-300 overflow-hidden ${isOpen ? 'w-64' : 'w-12'}`}
+      className={`retro-container transition-all duration-300 overflow-hidden h-full relative ${
+        isOpen ? 'w-64' : 'w-12'
+      }`}
     >
-      <div className="flex flex-col justify-between h-full">
+      <div className="flex flex-col justify-between h-full mt-10">
         <div>
           {isOpen ? (
             <>

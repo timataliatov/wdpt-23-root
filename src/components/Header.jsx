@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import HamburgerMenu from './HamburgerMenu';
 
 function Header({ theme, cycleTheme }) {
   return (
@@ -9,7 +10,7 @@ function Header({ theme, cycleTheme }) {
         <span className="text-xl font-bold whitespace-nowrap">
           # tima_taliatov // wdpt-23
         </span>
-        <div className="flex items-center space-x-2">
+        <div className="hidden md:flex items-center space-x-2">
           <Link
             to="/"
             className="retro-button text-sm hover-effect w-36 text-center"
@@ -35,6 +36,7 @@ function Header({ theme, cycleTheme }) {
             Theme: {theme}
           </button>
         </div>
+        <HamburgerMenu theme={theme} cycleTheme={cycleTheme} />
       </nav>
     </header>
   );

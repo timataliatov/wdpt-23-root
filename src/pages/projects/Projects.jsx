@@ -19,11 +19,13 @@ function Projects() {
   const [activeWeek, setActiveWeek] = useState(null);
 
   return (
-    <div className="grid grid-cols-[180px_1fr] gap-4 h-full">
-      <ProjectsSidebar activeWeek={activeWeek} />
+    <div className="grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 h-full">
+      <div className="hidden md:block">
+        <ProjectsSidebar activeWeek={activeWeek} />
+      </div>
       <div className="retro-container overflow-auto">
         <h2 className="text-xl font-bold mb-4 text-center">Projects</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {projects.map((project) => (
             <ProjectCard
               key={project.week}

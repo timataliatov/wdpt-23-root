@@ -1,0 +1,21 @@
+.layout-container {
+  @apply grid grid-rows-[auto_1fr_auto] min-h-screen p-2;
+}
+
+.sidebar-toggles {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.left-toggle {
+  border-top-right-radius: 0.5rem;
+}
+
+.right-toggle {
+  border-top-left-radius: 0.5rem;
+}

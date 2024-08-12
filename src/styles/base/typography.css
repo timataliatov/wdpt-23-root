@@ -1,0 +1,23 @@
+body {
+  font-family: var(--font-main);
+  color: var(--color-text-main);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-accent-alt {
+  color: var(--color-accent-alt);
+}
+
+.text-highlight {
+  color: var(--color-highlight);
+}
+
+.ascii-art {
+  font-size: 10px;
+  line-height: 1;
+  white-space: pre;
+  overflow: hidden;
+}
