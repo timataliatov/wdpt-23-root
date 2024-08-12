@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 const Terminal = ({ onClose }) => {
   const [input, setInput] = useState('');
@@ -113,6 +114,10 @@ const Terminal = ({ onClose }) => {
       </div>
     </div>
   );
+};
+
+Terminal.propTypes = {
+  onClose: PropTypes.func.isRequired,
 };
 
 export default Terminal;

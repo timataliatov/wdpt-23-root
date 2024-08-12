@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Footer({
   terminalOpen,
@@ -38,5 +39,14 @@ function Footer({
     </footer>
   );
 }
+
+Footer.propTypes = {
+  terminalOpen: PropTypes.bool.isRequired,
+  setTerminalOpen: PropTypes.func.isRequired,
+  leftSidebarOpen: PropTypes.bool.isRequired,
+  setLeftSidebarOpen: PropTypes.func.isRequired,
+  rightSidebarOpen: PropTypes.bool.isRequired,
+  setRightSidebarOpen: PropTypes.func.isRequired,
+};
 
 export default Footer;

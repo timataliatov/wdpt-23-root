@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function RightSidebar({ isOpen }) {
   return (
@@ -34,5 +35,9 @@ function RightSidebar({ isOpen }) {
     </aside>
   );
 }
+
+RightSidebar.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+};
 
 export default RightSidebar;

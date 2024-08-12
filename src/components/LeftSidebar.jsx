@@ -1,5 +1,6 @@
 import React from 'react';
 import SystemStats from './SystemStats';
+import PropTypes from 'prop-types';
 
 function LeftSidebar({ isOpen }) {
   return (
@@ -33,5 +34,9 @@ undefined
     </aside>
   );
 }
+
+LeftSidebar.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+};
 
 export default LeftSidebar;

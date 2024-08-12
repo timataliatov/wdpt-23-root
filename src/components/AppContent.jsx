@@ -5,6 +5,7 @@ import MainContent from './MainContent';
 import Footer from './Footer';
 import MatrixRain from './MatrixRain';
 import Terminal from './Terminal';
+import PropTypes from 'prop-types';
 
 function AppContent() {
   const [theme, setTheme] = useState(
@@ -53,5 +54,14 @@ function AppContent() {
     </div>
   );
 }
+
+AppContent.propTypes = {
+  terminalOpen: PropTypes.bool,
+  setTerminalOpen: PropTypes.func,
+  leftSidebarOpen: PropTypes.bool,
+  setLeftSidebarOpen: PropTypes.func,
+  rightSidebarOpen: PropTypes.bool,
+  setRightSidebarOpen: PropTypes.func,
+};
 
 export default AppContent;

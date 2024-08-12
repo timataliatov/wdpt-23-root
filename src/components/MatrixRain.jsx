@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 
 const MatrixRain = ({ theme }) => {
   const canvasRef = useRef(null);
@@ -54,6 +55,10 @@ const MatrixRain = ({ theme }) => {
   }, [theme]);
 
   return <canvas ref={canvasRef} className="matrix-rain" />;
+};
+
+MatrixRain.propTypes = {
+  theme: PropTypes.string.isRequired,
 };
 
 export default MatrixRain;

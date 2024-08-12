@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function Header({ theme, cycleTheme }) {
   return (
@@ -38,5 +39,10 @@ function Header({ theme, cycleTheme }) {
     </header>
   );
 }
+
+Header.propTypes = {
+  theme: PropTypes.string.isRequired,
+  cycleTheme: PropTypes.func.isRequired,
+};
 
 export default Header;

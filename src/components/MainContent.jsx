@@ -5,6 +5,7 @@ import Home from '../pages/Home';
 import Contact from '../pages/Contact';
 import LeftSidebar from './LeftSidebar';
 import RightSidebar from './RightSidebar';
+import PropTypes from 'prop-types';
 
 function MainContent({ isProjectsPage, leftSidebarOpen, rightSidebarOpen }) {
   return (
@@ -32,5 +33,11 @@ function MainContent({ isProjectsPage, leftSidebarOpen, rightSidebarOpen }) {
     </main>
   );
 }
+
+MainContent.propTypes = {
+  isProjectsPage: PropTypes.bool.isRequired,
+  leftSidebarOpen: PropTypes.bool.isRequired,
+  rightSidebarOpen: PropTypes.bool.isRequired,
+};
 
 export default MainContent;

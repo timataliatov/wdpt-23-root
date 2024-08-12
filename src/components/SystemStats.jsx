@@ -1,20 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
-/**
- * Renders system statistics.
- * @param {Object} props - Component props.
- * @param {boolean} props.isOpen - Indicates if the component is open.
- * @returns {JSX.Element} - The rendered component.
- */
 const SystemStats = ({ isOpen }) => {
-  // Initialize state with mock data
   const [stats, setStats] = useState({
     cpu: 0.7,
     memory: { used: 134, total: 979 },
     swap: { used: 7.04, total: 1550 },
   });
 
-  // Simulate system statistics update every 2 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setStats({
@@ -30,23 +23,15 @@ const SystemStats = ({ isOpen }) => {
       });
     }, 2000);
 
-    // Clean up the interval when the component unmounts
     return () => clearInterval(interval);
   }, []);
 
-  /**
-   * Renders a bar with the given value and total.
-   * @param {number} value - The value to display.
-   * @param {number} total - The total value.
-   * @returns {string} - The rendered bar.
-   */
   const renderBar = (value, total) => {
     const percentage = (value / total) * 100;
     const filledBars = Math.floor(percentage / 5);
     return '[' + '|'.repeat(filledBars).padEnd(20, ' ') + ']';
   };
 
-  // Render mini stats if component is not open
   if (!isOpen) {
     return (
       <div className="system-stats-mini">
@@ -57,7 +42,6 @@ const SystemStats = ({ isOpen }) => {
     );
   }
 
-  // Render full stats if component is open
   return (
     <div className="system-stats font-mono text-xs mt-4">
       <div className="separator"></div>
@@ -86,6 +70,10 @@ const SystemStats = ({ isOpen }) => {
       </div>
     </div>
   );
+};
+
+SystemStats.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
 };
 
 export default SystemStats;
