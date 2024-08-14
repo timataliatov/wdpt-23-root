@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, X } from 'lucide-react';
 import PropTypes from 'prop-types';
 
 const HamburgerMenu = ({ theme, cycleTheme }) => {
@@ -9,7 +9,7 @@ const HamburgerMenu = ({ theme, cycleTheme }) => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <button
         className="fixed top-4 right-4 z-50 retro-button text-2xl p-2"
         onClick={toggleMenu}
@@ -76,10 +76,7 @@ const HamburgerMenu = ({ theme, cycleTheme }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Twitter
-                className="text-[color:var(--color-text-main)]"
-                size={24}
-              />
+              <X className="text-[color:var(--color-text-main)]" size={24} />
             </a>
           </div>
         </div>

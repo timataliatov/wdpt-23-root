@@ -6,11 +6,11 @@ import HamburgerMenu from './HamburgerMenu';
 function Header({ theme, cycleTheme }) {
   return (
     <header className="retro-container mb-4 px-4">
-      <nav className="flex justify-between items-center h-10 px-10">
-        <span className="text-xl font-bold whitespace-nowrap">
+      <nav className="flex justify-between items-center h-20 px-20">
+        <span className="text-xl font-bold whitespace-nowrap pr-6">
           # tima_taliatov // wdpt-23
         </span>
-        <div className="hidden md:flex items-center space-x-2">
+        <div className="hidden lg:flex items-center space-x-2">
           <Link
             to="/"
             className="retro-button text-sm hover-effect w-36 text-center"

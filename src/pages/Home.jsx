@@ -20,7 +20,7 @@ function Home() {
     {
       title: 'Web Development',
       description:
-        'Crafting responsive and intuitive user interfaces involves leveraging modern web technologies to create engaging and user-friendly experiences.',
+        'Crafting responsive and intuitive user interfaces involves leveraging modern web technologies.',
     },
     {
       title: 'Backend Solutions',
@@ -41,22 +41,24 @@ function Home() {
 
   return (
     <div className="flex flex-col h-full">
-      <div className="flex-grow overflow-auto mb-4">
+      <div className="flex-grow overflow-auto m-14">
         <pre className="whitespace-pre-wrap font-mono text-sm">
           {text}
           <span className="blinking-cursor"></span>
         </pre>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+      <div className="grid w-auto m-auto xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2">
         {skills.map((skill, index) => (
           <div key={index} className="retro-card flex flex-col h-64">
             <div className="ascii-art mb-2 h-16 flex items-center justify-center">
-              {`
+              <div className="hidden lg:flex">
+                {`
    _____  _____
   |     ||     |
   |  J  ||  S  |
   |_____||_____|
               `}
+              </div>
             </div>
             <h3 className="text-lg font-bold mb-2 text-center">
               {skill.title}

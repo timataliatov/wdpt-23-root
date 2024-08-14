@@ -9,7 +9,7 @@ function Footer({ terminalOpen, setTerminalOpen }) {
           © 2024 Timur Talyatov. All rights reserved.
         </span>
         <button
-          className="retro-button text-sm hover-effect index-10"
+          className="retro-button text-sm hover-effect index-10 hidden md:block"
           onClick={() => setTerminalOpen(!terminalOpen)}
         >
           {terminalOpen ? 'Close Terminal' : 'Open Terminal'}
